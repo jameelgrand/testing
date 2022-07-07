@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Demo</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en" ng-app="StarterApp">
+  <head>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="initial-scale=1" />
+  </head>
+  <body ng-controller="AppCtrl" class="l-offset-nav ng-scope">
+    <md-toolbar class="main-nav background-regal l-pinned-top l-layer-5 md-default-theme">
+      <nav>
+        <button class="main-nav-button main-nav-mobile-trigger l-right md-button md-default-theme" ng-transclude="" aria-label="View Menu" ng-click="toggleMainMenu($event)" md-button="md-button" tabindex="0"><span class="ng-scope">Site Menu </span><span class="icon icon-arrow-drop-down ng-scope"></span></button>
+        <ul ng-class="showMainNav ? 'is-visible' : ''">
+          <li class="l-left"><a class="main-nav-button md-button md-default-theme" ng-transclude="" href="#/" md-button=""><span class="material-icons">home</span></a></li>
+          <li class="l-left"><a class="main-nav-button md-button md-default-theme" ng-transclude="" href="#/features" md-button=""><span class="ng-scope">Features</span></a></li>
+          <li class="l-left"><a class="main-nav-button md-button md-default-theme" ng-transclude="" href="#/docs" md-button=""><span class="ng-scope">Docs</span></a></li>
+          <!-- <li class="l-right"><a class="main-nav-button has-icon md-button md-default-theme" ng-transclude="" href="/download/" md-button=""> <span class="icon icon-cloud-download ng-scope"></span><span class="ng-scope"> Download</span></a></li> -->
+        </ul>
+      </nav>
+    </md-toolbar>
+    <!-- HERO LOGO -->
+    <!-- <header class="background-sky">
+      <div class="hero background-sf-paper is-large">
+       
+      </div>
+    </header> -->
+    <div ng-view></div>
+    <div class="main-footer" style="position: absolute; bottom: 0; width: 100%;">
+      <footer class="background-steel"><small class="text-caption">Powered by JAMEEL </small></footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.7.1/angular-material-icons.min.js" integrity="sha512-WeG+hZOdUm8P4dCxmm9JWzYZf7YJLxxgeGHzgrl0KJpKLKRm06UV8ttDgW7ldr4jOqjfQlbg7Ssk6/aqeus+1A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
